@@ -27,7 +27,7 @@ This project is designed for educational analytics, machine learning deployment 
 - **Model Type:** Deep Neural Network (TensorFlow / Keras)
 - **Target Variable:** Exam Score (0–100)
 - **Features Include:**
-  - Age
+  - Age(Years)
   - Gender
   - Course Type
   - Study Hours
