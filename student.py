@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 
 # --- PAGE CONFIG ---
 st.set_page_config(
-    page_title="ExamScore AI Predictor", 
+    page_title="Trymore's ExamScore AI Predictor", 
     page_icon="🎓", 
     layout="wide",
     initial_sidebar_state="expanded"
@@ -103,7 +103,7 @@ st.markdown("Predict student performance using Deep Learning based on 20,000+ st
 col1, col2 = st.columns([1, 1], gap="large")
 
 with col1:
-    st.subheader("Model Insights")
+    st.subheader("Engineer: Trymore Mhlanga")
     st.write("Current Configuration Summary:")
     
     summary_df = pd.DataFrame({
@@ -169,4 +169,4 @@ if 'score' in st.session_state:
 
 # --- FOOTER ---
 st.divider()
-st.caption("Developed with Streamlit & TensorFlow | Data Source: Exam_Score_Prediction.csv")
+st.caption("Developed By Trymore Mhlanga with Streamlit & TensorFlow | Data Source: Exam_Score_Prediction.csv")

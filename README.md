@@ -1,13 +1,11 @@
-# 🎓 ExamScore AI Predictor — Streamlit Application
+# 🎓 ExamScore AI Predictor: Streamlit Application
 
-An end-to-end deep learning web application that predicts student exam scores based on academic behavior, study habits, and environmental factors. Built with **TensorFlow** and deployed using **Streamlit**, this project demonstrates applied machine learning, model deployment, and interactive dashboard design.
+An end-to-end deep learning web application that predicts student exam scores based on academic behavior, study habits, and environmental factors. Built with TensorFlow and deployed using Streamlit, this project demonstrates applied machine learning, model deployment, and interactive dashboard design.
 
 ---
 
 ## 🚀 Live Application
-> *(Add your Streamlit Cloud URL here after deployment)*  
-Example: https://exam-score-ai-predictor.streamlit.app
-
+>[Trymore's Model Application](https://exam-score-prediction-trymoremlangaaa.streamlit.app/)
 ---
 
 ## 📌 Project Overview
@@ -20,7 +18,7 @@ The application provides:
 - Personalized recommendations for improvement
 - A professional, user-friendly dashboard interface
 
-This project is designed for **educational analytics**, **machine learning deployment**, and **portfolio demonstration** purposes.
+This project is designed for educational analytics, machine learning deployment and portfolio demonstration purposes.
 
 ---
 
