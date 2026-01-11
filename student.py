@@ -10,7 +10,7 @@ from plotly.subplots import make_subplots
 # PAGE CONFIGURATION
 # =============================
 st.set_page_config(
-    page_title="EduElite | AI-Powered Academic Intelligence",
+    page_title="Trymore Mhlanga | AI-Powered Academic Intelligence",
     page_icon="💎",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -307,7 +307,7 @@ MAPPINGS = {
 # =============================
 # SIDEBAR NAVIGATION
 # =============================
-st.sidebar.markdown("<h2 style='text-align: center;'>💎 EduElite</h2>", unsafe_allow_html=True)
+st.sidebar.markdown("<h2 style='text-align: center;'>💎 TryieDataMagic</h2>", unsafe_allow_html=True)
 st.sidebar.markdown("<div style='text-align: center; color: rgba(245, 199, 122, 0.7); margin-bottom: 30px;'>ACADEMIC INTELLIGENCE PLATFORM</div>", unsafe_allow_html=True)
 
 page = st.sidebar.radio(
@@ -327,10 +327,10 @@ if page == "🏠 Dashboard":
     col1, col2, col3 = st.columns([2, 1, 1])
     
     with col1:
-        st.markdown("<h1>EDUELITE INTELLIGENCE</h1>", unsafe_allow_html=True)
+        st.markdown("<h1> TM INTELLIGENCE</h1>", unsafe_allow_html=True)
         st.markdown("""
         <div style='color: rgba(245, 199, 122, 0.8); font-size: 18px; line-height: 1.6;'>
-        Advanced academic performance prediction system leveraging deep learning 
+        Academic performance prediction system leveraging deep learning 
         and neural networks. Trained on 20,000+ student records for accurate 
         score forecasting and personalized recommendations.
         </div>
@@ -750,11 +750,11 @@ elif page == "📊 Analytics":
     st.markdown("<h4>🔍 Key Insights</h4>", unsafe_allow_html=True)
     
     insights = [
-        "• **Study Hours** show diminishing returns after 8 hours/day",
-        "• **Attendance above 85%** has strongest correlation with high scores",
-        "• **Sleep quality** impacts scores more than sleep quantity",
-        "• **Group study** yields 3-5% better results than solo study",
-        "• **Internet access** improves scores by 4-7% on average"
+        "• Study Hours show diminishing returns after 8 hours/day",
+        "• Attendance above 85% has strongest correlation with high scores",
+        "• Sleep quality impacts scores more than sleep quantity",
+        "• Group study yields 3 to 5% better results than solo study",
+        "• Internet access improves scores by 4-7% on average"
     ]
     
     for insight in insights:
@@ -850,6 +850,6 @@ elif page == "⚙️ System":
 # FOOTER
 # =============================
 st.markdown(
-    "<div class='footer'>EduElite Analytics | Academic Intelligence Platform © 2024</div>",
+    "<div class='footer'>Trymore Mhlanga Analytics | Academic Intelligence Platform © 2026</div>",
     unsafe_allow_html=True
 )
