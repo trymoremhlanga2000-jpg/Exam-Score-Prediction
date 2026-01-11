@@ -665,7 +665,7 @@ elif page == "🎯 Score Prediction":
     st.markdown("</div>", unsafe_allow_html=True)
 
 # =============================
-# ANALYTICS PAGE
+# ANALYTICS PAGE - FIXED SECTION
 # =============================
 elif page == "📊 Analytics":
     st.markdown("<div class='card'>", unsafe_allow_html=True)
@@ -679,7 +679,7 @@ elif page == "📊 Analytics":
                 'Exam Difficulty', 'Age', 'Gender']
     importance = [28.5, 22.3, 15.8, 12.4, 8.2, 5.6, 3.4, 2.1, 1.5, 0.8, 0.4]
     
-    # Create horizontal bar chart
+    # Create horizontal bar chart with FIXED colorscale
     fig = go.Figure()
     
     fig.add_trace(go.Bar(
@@ -688,7 +688,7 @@ elif page == "📊 Analytics":
         orientation='h',
         marker=dict(
             color=importance,
-            colorscale='gold',
+            colorscale='YlOrBr',  # Changed from 'gold' to valid Plotly colorscale
             showscale=True,
             colorbar=dict(title="Importance %")
         ),
@@ -716,7 +716,7 @@ elif page == "📊 Analytics":
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        st.markdown("<div class='model-card'>", unsafe_allow_html=True)
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
         st.markdown("##### 📚 By Study Method")
         method_stats = pd.DataFrame({
             'Method': ['Coaching', 'Group Study', 'Self-Study', 'Online', 'Mixed'],
@@ -726,7 +726,7 @@ elif page == "📊 Analytics":
         st.markdown("</div>", unsafe_allow_html=True)
     
     with col2:
-        st.markdown("<div class='model-card'>", unsafe_allow_html=True)
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
         st.markdown("##### 💤 By Sleep Quality")
         sleep_stats = pd.DataFrame({
             'Quality': ['Good', 'Average', 'Poor'],
@@ -736,7 +736,7 @@ elif page == "📊 Analytics":
         st.markdown("</div>", unsafe_allow_html=True)
     
     with col3:
-        st.markdown("<div class='model-card'>", unsafe_allow_html=True)
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
         st.markdown("##### 🎓 By Course Type")
         course_stats = pd.DataFrame({
             'Course': ['B.Tech', 'B.Sc', 'B.Com', 'BCA', 'BBA'],
@@ -746,7 +746,7 @@ elif page == "📊 Analytics":
         st.markdown("</div>", unsafe_allow_html=True)
     
     # Key Insights
-    st.markdown("<div class='model-card'>", unsafe_allow_html=True)
+    st.markdown("<div class='card'>", unsafe_allow_html=True)
     st.markdown("<h4>🔍 Key Insights</h4>", unsafe_allow_html=True)
     
     insights = [
@@ -774,7 +774,7 @@ elif page == "⚙️ System":
     col1, col2 = st.columns(2)
     
     with col1:
-        st.markdown("<div class='model-card'>", unsafe_allow_html=True)
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
         st.markdown("### 🚀 Deployment Specifications")
         st.markdown("""
         **Framework:** Streamlit Cloud  
@@ -797,7 +797,7 @@ elif page == "⚙️ System":
         
         st.markdown("</div>", unsafe_allow_html=True)
         
-        st.markdown("<div class='model-card'>", unsafe_allow_html=True)
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
         st.markdown("### 📊 Dataset Information")
         st.markdown("""
         **Source:** Exam_Score_Prediction.csv  
@@ -810,7 +810,7 @@ elif page == "⚙️ System":
         st.markdown("</div>", unsafe_allow_html=True)
     
     with col2:
-        st.markdown("<div class='model-card'>", unsafe_allow_html=True)
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
         st.markdown("### 🤖 Model Architecture")
         st.markdown("""
         **Type:** Deep Neural Network  
@@ -825,7 +825,7 @@ elif page == "⚙️ System":
         st.metric("Training Time", "8.4 mins")
         st.markdown("</div>", unsafe_allow_html=True)
         
-        st.markdown("<div class='model-card'>", unsafe_allow_html=True)
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
         st.markdown("### 🛡️ System Features")
         st.markdown("""
         ✅ **Deep Learning Powered** - Neural Network predictions  
